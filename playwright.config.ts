@@ -30,8 +30,8 @@ export default defineConfig({
   //   expect: { timeout: 10000 }
   // }),
   use: {
-    // screenshot: 'only-on-failure',
-    // video: 'retain-on-failure',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
     // viewport: { width: 500, height: 500 },

@@ -52,7 +52,7 @@ test("Verify Playwright Locators", async ({ page }) => {
 */
   await page.goto("https://demo.nopcommerce.com/register?returnUrl=%2F");
   //await page.getByRole("link",{name:'Register'}).click();
-  await expect(page.getByRole("heading", { name: 'Register' })).toBeVisible();
+  await expect(page.getByRole("heading", { name: 'Register' })).toBeVisible(); //h1
 
   //Throws error since Text matching with 3 elements. We cant perform any action.
   //await expect(page.getByText('Register')).toBeVisible(); //  Error: strict mode violation
